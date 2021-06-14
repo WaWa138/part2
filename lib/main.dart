@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
-class TabBarViewWidget extends StatelessWidget {
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
   @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+    @override
+
   Widget build(BuildContext context) {
     return DefaultTabController(
       initialIndex: 1,
@@ -18,28 +26,52 @@ class TabBarViewWidget extends StatelessWidget {
             unselectedLabelColor: Colors.grey,
             tabs: [
               Tab(
-                text: 'Cake',
+                text: 'LOCATION',
                 icon: Icon(
-                  Icons.cake,
-                  color: Colors.white,
+                  Icons.add_location_outlined,
+                  color: Colors.black,
                 ),
                 iconMargin: EdgeInsets.only(bottom: 10.0),
               ),
               //child: Image.asset('images/android.png'),
 
               Tab(
-                text: 'Radio',
+                text: 'SNOW',
                 icon: Icon(
-                  Icons.radio,
-                  color: Colors.white,
+                  Icons.ac_unit_rounded,
+                  color: Colors.blue,
                 ),
                 iconMargin: EdgeInsets.only(bottom: 10.0),
               ),
               Tab(
-                text: 'Gift',
+                text: 'DARK',
                 icon: Icon(
-                  Icons.card_giftcard,
-                  color: Colors.white,
+                  Icons.bedtime,
+                  color: Colors.black,
+                ),
+                iconMargin: EdgeInsets.only(bottom: 10.0),
+              ),
+              Tab(
+                text: 'SUNNY',
+                icon: Icon(
+                  Icons.brightness_5_outlined,
+                  color: Colors.deepOrange,
+                ),
+                iconMargin: EdgeInsets.only(bottom: 10.0),
+              ),
+              Tab(
+                text: 'CLOUDY',
+                icon: Icon(
+                  Icons.cloud_circle_outlined,
+                  color: Colors.black,
+                ),
+                iconMargin: EdgeInsets.only(bottom: 10.0),
+              ),
+              Tab(
+                text: 'RAINY',
+                icon: Icon(
+                  Icons.beach_access,
+                  color: Colors.blueGrey,
                 ),
                 iconMargin: EdgeInsets.only(bottom: 10.0),
               ),
